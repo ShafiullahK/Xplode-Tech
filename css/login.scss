@@ -1,0 +1,81 @@
+@import "./partials/globals";
+@import "./partials/inputs";
+
+#top-inv-logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.login-wrapper {
+  position: relative;
+  width: 30%;
+  border: 1px solid lightgrey;
+  margin: 60px auto;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  box-shadow: 5px 8px 20px rgba(203, 199, 199, 0.25);
+
+  #user-icon-top {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 100%;
+    top: -35px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: $primary-dark;
+  }
+
+  form {
+    margin-top: 50px;
+
+    .form-group {
+      width: 90%;
+      margin: 10px auto;
+
+      .form-control {
+        width: 100%;
+        padding: 8px;
+      }
+
+      .login-btn {
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          rgb(146, 19, 172),
+          rgb(180, 49, 231)
+        );
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: 50px;
+        color: #ffffff;
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        letter-spacing: 2.5px;
+        cursor: pointer;
+      }
+      .login-btn:hover {
+        box-shadow: 0px 0px 5px purple !important;
+        transition: all 0.3s ease !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+.card {
+  border: 0 !important;
+  box-shadow: 0px 5px 10px rgba(227, 227, 227, 0.25);
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+
+  .card-header {
+    background: #fff;
+    font-weight: bold;
+    font-size: 0.9rem !important;
+  }
+  .card-body {
+    color: grey;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Oleo+Script+Swash+Caps&display=swap");
+* {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #ebf0f5 !important;
+}
+/*# sourceMappingURL=globals.css.map */

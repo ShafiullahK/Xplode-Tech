@@ -1,0 +1,140 @@
+#sidebar-toggler-sm {
+  display: none;
+}
+.sidebar {
+  min-height: 100vh;
+  background-color: #fff;
+  box-shadow: 3px 0px 8px rgba(242, 242, 242, 0.25);
+  padding: 0 !important;
+  position: sticky;
+
+  .sidebar-top {
+    background: #fbfdff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: bold;
+
+    .fname {
+      color: $primary-color;
+      font-size: 1.3rem;
+      font-family: "Oleo Script Swash Caps", cursive;
+      font-weight: normal !important;
+    }
+  }
+
+  .nav-pills {
+    .separator-text {
+      padding: 15px;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 22px;
+      color: $primary-dark;
+    }
+
+    .nav-item {
+      width: 100%;
+      margin-bottom: 5px;
+
+      ul {
+        list-style-type: none;
+        position: relative;
+
+        .nav-item {
+          width: 90%;
+          margin: 5px 5%;
+          .nav-link {
+            font-size: 11px;
+          }
+          & :hover {
+            padding-right: 10px;
+            background-color: rgba($primary-color, 0.4);
+          }
+        }
+      }
+
+      ul::after {
+        content: "";
+        width: 3.8px;
+        height: 100%;
+        background-color: $primary-color;
+        opacity: 0.18;
+        position: absolute;
+        left: 35px;
+        top: 0;
+      }
+
+      // Mobile sidebar
+      @media only screen and (max-width: 768px) {
+        ul {
+          margin-left: 60px;
+        }
+      }
+
+      .nav-link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #8e8e8e;
+
+        span {
+          display: inline-block;
+          box-sizing: border-box !important;
+        }
+
+        .icon {
+          width: 15%;
+          text-align: center;
+          padding-left: 3px;
+        }
+        .text {
+          width: 70%;
+          padding-left: 10px;
+          font-weight: bold;
+        }
+        .caret {
+          width: 10%;
+          text-align: left;
+        }
+      }
+
+      .nav-link[aria-expanded="true"] > .caret i.fas {
+        transform: rotate(180deg);
+      }
+
+      & :hover {
+        color: rgb(49, 49, 49);
+        transition: $transition;
+      }
+    }
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    background-color: rgba($primary-color, 0.4);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #sidebar-toggler-desk {
+    display: none !important;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  #sidebar-toggler-sm {
+    display: block;
+    width: 30%;
+    margin: 10px 35%;
+    outline: none;
+  }
+
+  & :focus {
+    box-shadow: none !important;
+  }
+}

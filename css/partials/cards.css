@@ -1,0 +1,19 @@
+.card {
+  border: 0 !important;
+  -webkit-box-shadow: 0px 5px 10px rgba(227, 227, 227, 0.25);
+          box-shadow: 0px 5px 10px rgba(227, 227, 227, 0.25);
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card .card-header {
+  background: #fff;
+  font-weight: bold;
+  font-size: 0.9rem !important;
+}
+
+.card .card-body {
+  color: grey;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=cards.css.map */

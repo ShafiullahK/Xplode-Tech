@@ -1,0 +1,24 @@
+.main-area {
+  padding: 0 !important;
+
+  .navbar {
+    max-height: 50px;
+    background: #fafcfe !important;
+    box-shadow: 0px 3px 8px rgba(243, 243, 243, 0.25);
+    z-index: 1;
+
+    .nav-link {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: auto !important;
+    max-height: 300px !important;
+    .nav-link {
+      text-align: center !important;
+    }
+  }
+}

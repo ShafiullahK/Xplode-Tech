@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Oleo+Script+Swash+Caps&display=swap");
+
+* {
+  box-sizing: border-box !important;
+}
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #ebf0f5 !important;
+}
+
+// Variables
+$primary-color: rgb(180, 49, 231);
+$primary-dark: rgb(146, 19, 172);
+$primary-light: rgb(244, 190, 255);
+$success: rgb(29, 204, 38);
+$success-dark: rgb(10, 167, 18);
+$danger: rgb(204, 29, 29);
+$danger-dark: rgb(167, 10, 10);
+$transition: all 0.3s ease;

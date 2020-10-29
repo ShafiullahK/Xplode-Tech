@@ -1,0 +1,16 @@
+label {
+  font-size: 0.78rem !important;
+}
+.form-control {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #dad1d1;
+  outline: none;
+  font-size: 0.92em;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  border: 2px solid $primary-color;
+  transition: border 0.2s ease;
+}

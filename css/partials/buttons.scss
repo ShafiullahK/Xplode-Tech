@@ -1,0 +1,36 @@
+.btn {
+  font-family: "Poppins", "sans-serif";
+  cursor: pointer;
+  border: 0 !important;
+  box-shadow: none;
+  transition: all 0.3s ease !important;
+  font-size: 0.95rem;
+}
+
+.btn-sm {
+  font-size: 0.77rem !important;
+}
+
+.btn-xs {
+  font-size: 0.55rem !important;
+}
+
+// Flavors
+.btn-primary {
+  background: linear-gradient(90deg, $primary-dark, $primary-color);
+}
+.btn-primary:hover {
+  box-shadow: 0px 0px 5px $primary-color !important;
+}
+.btn-success {
+  background: linear-gradient(90deg, $success-dark, $success);
+}
+.btn-success:hover {
+  box-shadow: 0px 0px 5px $success !important;
+}
+.btn-danger {
+  background: linear-gradient(90deg, $danger-dark, $danger);
+}
+.btn-danger:hover {
+  box-shadow: 0px 0px 5px $danger !important;
+}
