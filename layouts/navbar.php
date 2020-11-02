@@ -2,7 +2,7 @@
 
 
 
-    if(empty($_SESSION['email']) && empty($_SESSION['password'])){
+    if(! isset($_SESSION['email']) && ! isset($_SESSION['password'])){
 
         exit(header("location:login.php"));
     }
