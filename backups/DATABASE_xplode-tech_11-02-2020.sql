@@ -82,12 +82,10 @@ CREATE TABLE `backups` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
 
 
- INSERT INTO backups (`id`,`src`,`created_by`,`created_at`,`updated_at`) VALUES ('37','D:Xampphtdocsxplode-techackups/DATABASE_xplode-tech_10-26-2020.sql','super_admin','2020-10-26 11:32:10','2020-10-26 02:32:11');
-
- INSERT INTO backups (`id`,`src`,`created_by`,`created_at`,`updated_at`) VALUES ('38','D:\Xampp\htdocs\xplode-tech\backups/DATABASE_xplode-tech_10-26-2020.sql','admin','2020-10-26 11:42:22','2020-10-26 02:42:22');
+ INSERT INTO backups (`id`,`src`,`created_by`,`created_at`,`updated_at`) VALUES ('39','D:\Xampp\htdocs\xplode-tech\backups/DATABASE_xplode-tech_11-02-2020.sql','super_admin','2020-11-02 18:57:28','2020-11-02 09:57:28');
 
 DROP TABLE IF EXISTS `courses`; 
 
@@ -128,7 +126,7 @@ CREATE TABLE `expenses` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 
  INSERT INTO expenses (`id`,`title`,`amount`,`date`,`description`,`status`,`created_at`,`updated_at`) VALUES ('13','Electricity bill','26000','2020-10-06','DOne','primary','2020-06-10 04:42:05','2020-06-09 18:42:05');
@@ -146,6 +144,8 @@ CREATE TABLE `expenses` (
  INSERT INTO expenses (`id`,`title`,`amount`,`date`,`description`,`status`,`created_at`,`updated_at`) VALUES ('21','Gas Bill','1000','2020-07-08','DOne','primary','2020-10-27 14:45:59','2020-10-27 05:45:59');
 
  INSERT INTO expenses (`id`,`title`,`amount`,`date`,`description`,`status`,`created_at`,`updated_at`) VALUES ('22','Electricity Bill','30000','2020-10-09','Done','primary','2020-10-27 14:47:09','2020-10-27 05:47:09');
+
+ INSERT INTO expenses (`id`,`title`,`amount`,`date`,`description`,`status`,`created_at`,`updated_at`) VALUES ('23','Salaries ','10000','2020-04-08','ok','primary','2020-11-02 18:56:37','2020-11-02 09:56:37');
 
 DROP TABLE IF EXISTS `fee_groups`; 
 
@@ -221,13 +221,13 @@ CREATE TABLE `master` (
 
  INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('183','12','19','45','1000','paid','','0000-00-00','1000','12','0','0','2020-09-28 20:29:09','2020-09-28 10:29:09');
 
- INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('184','12','14','68','3000','partial','','','1000','0','0','2000','2020-10-27 16:52:19','2020-10-27 07:52:19');
+ INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('184','12','14','68','3000','partial','','0000-00-00','1000','0','0','2000','2020-10-27 16:52:19','2020-10-27 07:52:19');
 
- INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('185','13','14','68','1200','Unpaid','','','0','0','0','1200','2020-10-27 16:52:19','2020-10-27 07:52:19');
+ INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('185','13','14','68','1200','Unpaid','','0000-00-00','0','0','0','1200','2020-10-27 16:52:19','2020-10-27 07:52:19');
 
- INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('186','11','14','68','1000','Unpaid','','','0','0','0','1000','2020-10-27 16:52:19','2020-10-27 07:52:19');
+ INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('186','11','14','68','1000','Unpaid','','0000-00-00','0','0','0','1000','2020-10-27 16:52:19','2020-10-27 07:52:19');
 
- INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('187','14','14','68','1000','Unpaid','','','0','0','0','1000','2020-10-27 16:52:19','2020-10-27 07:52:19');
+ INSERT INTO master (`id`,`fee_type_id`,`fee_group_id`,`student_id`,`amount`,`status`,`payment`,`due_date`,`paid`,`fine`,`discount`,`balance`,`created_at`,`updated_at`) VALUES ('187','14','14','68','1000','Unpaid','','0000-00-00','0','0','0','1000','2020-10-27 16:52:19','2020-10-27 07:52:19');
 
 DROP TABLE IF EXISTS `migrations`; 
 
@@ -362,11 +362,11 @@ CREATE TABLE `student_attendences` (
 
  INSERT INTO student_attendences (`id`,`student_id`,`course_id`,`date`,`attendence_type_id`,`created_at`,`updated_at`) VALUES ('341','68','2','2008-03-17','2','2020-08-31 09:11:33','2020-08-31 09:11:40');
 
- INSERT INTO student_attendences (`id`,`student_id`,`course_id`,`date`,`attendence_type_id`,`created_at`,`updated_at`) VALUES ('342','35','2','2020-10-08','','2020-10-27 14:51:05','2020-10-27 05:51:05');
+ INSERT INTO student_attendences (`id`,`student_id`,`course_id`,`date`,`attendence_type_id`,`created_at`,`updated_at`) VALUES ('342','35','2','2020-10-08','0','2020-10-27 14:51:05','2020-10-27 05:51:05');
 
- INSERT INTO student_attendences (`id`,`student_id`,`course_id`,`date`,`attendence_type_id`,`created_at`,`updated_at`) VALUES ('343','40','2','2020-10-08','','2020-10-27 14:51:05','2020-10-27 05:51:05');
+ INSERT INTO student_attendences (`id`,`student_id`,`course_id`,`date`,`attendence_type_id`,`created_at`,`updated_at`) VALUES ('343','40','2','2020-10-08','0','2020-10-27 14:51:05','2020-10-27 05:51:05');
 
- INSERT INTO student_attendences (`id`,`student_id`,`course_id`,`date`,`attendence_type_id`,`created_at`,`updated_at`) VALUES ('344','68','2','2020-10-08','','2020-10-27 14:51:05','2020-10-27 05:51:05');
+ INSERT INTO student_attendences (`id`,`student_id`,`course_id`,`date`,`attendence_type_id`,`created_at`,`updated_at`) VALUES ('344','68','2','2020-10-08','0','2020-10-27 14:51:05','2020-10-27 05:51:05');
 
  INSERT INTO student_attendences (`id`,`student_id`,`course_id`,`date`,`attendence_type_id`,`created_at`,`updated_at`) VALUES ('345','35','2','2020-10-27','5','2020-10-27 16:55:18','2020-10-27 16:55:30');
 
